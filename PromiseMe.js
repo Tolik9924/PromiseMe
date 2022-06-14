@@ -100,19 +100,4 @@ class PromiseMe {
     
 }
 
-// tests
-
-PromiseMe.resolve('Hello World').then(() => {
-    return PromiseMe.resolve('Hello World');
-}).then(value => {
-    console.log(value);
-})
-
-/* let p = PromiseMe.resolve('Hello World');
-let p1 = p.then((value) => {
-    console.log(value);
-})
-
-console.log(p1); */
-
 module.exports = PromiseMe;
